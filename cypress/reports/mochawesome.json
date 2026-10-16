@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-10-16T11:16:27.568Z",
+    "end": "2026-10-16T11:16:48.227Z",
+    "duration": 20659,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c20b1700-661b-432c-b4fe-1b1a518499dd",
+      "title": "",
+      "fullFile": "cypress/e2e/youtube_trending.cy.js",
+      "file": "cypress/e2e/youtube_trending.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7010bc84-ea98-4589-8a2b-d66193a49404",
+          "title": "Final Project Bootcamp Cypress AfterOffice Batch #1 - YouTube Flow",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Harus sukses navigasi ke kategori gaming, buka trending nomor 3 dan verifikasi detail video",
+              "fullTitle": "Final Project Bootcamp Cypress AfterOffice Batch #1 - YouTube Flow Harus sukses navigasi ke kategori gaming, buka trending nomor 3 dan verifikasi detail video",
+              "timedOut": null,
+              "duration": 17824,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_youtubeGamingPage.default.navigate();\n_youtubeGamingPage.default.goToGamingCategory();\n_youtubeGamingPage.default.viewAllTrendingVideos();\n_youtubeGamingPage.default.selectTrendingVideoNumberThree();\ncy.then(() => {\n  _youtubeWatchPage.default.verifyVideoDetails(this.trendingTitle, this.trendingChannel);\n});",
+              "err": {},
+              "uuid": "39614e8a-0437-4c32-a2f0-c64030e3c99c",
+              "parentUUID": "7010bc84-ea98-4589-8a2b-d66193a49404",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "39614e8a-0437-4c32-a2f0-c64030e3c99c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 17824,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "8.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}
